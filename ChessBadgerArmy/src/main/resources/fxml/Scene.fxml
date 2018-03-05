@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: D3D3D3;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.chessbadgerarmy.FXMLController">
+   <children>
+      <AnchorPane layoutX="483.0" layoutY="150.0" prefHeight="520.0" prefWidth="620.0">
+         <children>
+            <GridPane fx:id="Board" gridLinesVisible="true" layoutX="210.0" layoutY="215.0" prefHeight="520.0" prefWidth="620.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+            </GridPane>
+         </children>
+      </AnchorPane>
+      <Pane fx:id="SettingPane" layoutX="48.0" layoutY="25.0" prefHeight="648.0" prefWidth="200.0" style="-fx-background-color: #FFFFFF;" AnchorPane.bottomAnchor="47.0" AnchorPane.leftAnchor="48.0" AnchorPane.topAnchor="25.0">
+         <children>
+            <Button fx:id="startButton" layoutX="62.0" layoutY="299.0" mnemonicParsing="false" text="Start Game" />
+            <TextArea fx:id="History" layoutY="376.0" prefHeight="274.0" prefWidth="200.0">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextArea>
+            <RadioButton fx:id="radioDifficult" layoutX="19.0" layoutY="265.0" mnemonicParsing="false" text="Difficult" />
+            <RadioButton fx:id="radioEasy" layoutX="19.0" layoutY="234.0" mnemonicParsing="false" text="Easy" />
+            <RadioButton fx:id="radioPvAI" layoutX="19.0" layoutY="140.0" mnemonicParsing="false" text="Player vs AI" />
+            <RadioButton fx:id="radioPvP" layoutX="19.0" layoutY="111.0" mnemonicParsing="false" text="Player vs Player" />
+            <Label alignment="CENTER" layoutX="33.0" layoutY="-2.0" prefHeight="32.0" prefWidth="146.0" style="-fx-font-size: 20;" text="Settings" />
+            <Label layoutX="19.0" layoutY="85.0" prefHeight="17.0" prefWidth="81.0" text="Game Mode:" />
+            <Label layoutX="19.0" layoutY="207.0" prefHeight="17.0" prefWidth="81.0" text="Game Mode:" />
+            <Label layoutX="19.0" layoutY="359.0" prefHeight="17.0" prefWidth="81.0" text="Move History:" />
+         </children></Pane>
+      <Pane layoutX="483.0" layoutY="25.0" prefHeight="90.0" prefWidth="620.0" style="-fx-background-color: #FFFFFF;">
+         <children>
+            <Label alignment="CENTER" layoutX="238.0" layoutY="16.0" prefHeight="37.0" prefWidth="145.0" style="-fx-font-size: 40;" text="Chess" />
+         </children>
+      </Pane>
+      <VBox layoutX="325.0" layoutY="150.0" prefHeight="520.0" prefWidth="135.0" style="-fx-background-color: #FFFFFF;">
+         <children>
+            <Label alignment="CENTER" prefHeight="32.0" prefWidth="146.0" style="-fx-font-size: 20;" text="White Player" />
+         </children></VBox>
+      <VBox layoutX="1124.0" layoutY="150.0" prefHeight="520.0" prefWidth="135.0" style="-fx-background-color: #FFFFFF;">
+         <children>
+            <Label alignment="CENTER" prefHeight="32.0" prefWidth="146.0" style="-fx-font-size: 20;" text="Black Player" />
+         </children></VBox>
+      
+   </children>
+</AnchorPane>
